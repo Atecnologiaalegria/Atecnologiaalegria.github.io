@@ -1,0 +1,178 @@
+/*importamos o tipo de letra "bangers" de google fonts. Buscar titorial de como importanr fontes de Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*Hacemos un reset a todos os espazos que deixa o navegador por defecto* */
+
+{*
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*características do texto preestablecido para a poesía*/
+pre {
+  color: chocolate;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: #f9f9f9;/*fondo cor gris*/;
+}
+
+
+/* Estilos principais */
+#secretrow {text-align: center;
+	margin-left: 0;
+}
+
+
+.video {text-align: center;} /* o video o poño centrado*/
+
+/* a clase hidden está para el epígrafe da páxina secreta si opacidad es 0 o fai transparente si opacity es 1 lo hace visible */ 
+/*clase do elemento da lista do navegador que se oculta páxina segreda*/
+.hidden {
+  opacity: 0;
+}
+
+.hidden:hover { /* como xa sabemos o hover cando lle paso o ratón por encima lle poño outras propiedades*/
+  opacity: 1;
+}
+
+h2 {
+	font-size: 1.8rem; /*(tamaño 16 pixeles) por 1.8, onde rem=16 pix*/
+	text-align: center;
+	text-transform: uppercase; /*transforma todas as letras de h2 en maísculas*/
+	font-weight: 500; /*ancho da letra*/
+	padding-bottom: 50px; /*deixa un espacio por debaixo de 50px*/
+	font-family: 'Bangers'; /*tipo de letra que importamos de google fonts*/
+	color: #828282;
+}
+
+h3 {
+	font-size: 1.4rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	font-weight: 400;
+	font-family: 'Bangers';
+	color: #828282;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0; /*marxe superior e inferior de 10px e marxe esquerda e dereita de 0 puntos*/
+	line-height: 1.7em; /*salto de línea*/
+}
+
+a {
+	text-decoration: none;
+} /* enlaces sen a liña que ten por defecto, e decir lle quito a liña*/
+
+/* Utility Classes */
+
+.container {
+	margin: auto; /* 0px de marxen vertical, centrado horizontalmente */
+	max-width: 1300px; /*coloca o ancho de 1300px como valor máximo do container*/
+	overflow: auto;
+	/*padding: 0 5px; /*crea un espacio en los bordes*/
+}
+
+.large {
+	font-size: 20px;
+}
+
+
+
+.medium{
+	font-size: 19px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 40px; /*me permite separar el texto da liña do botón: 15px arriba/abaixo e 40px esquerda, dereita*/
+	letter-spacing: 1px; /*separación entre letras*/
+	font-family: 'Bangers';
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid #fff; /*color blanco*/
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.btn-outline:hover { /*cando pase o ratón por encima que me cambie os cores de fondo e das letras*/
+	background: #fff; /*cor branco en Hex*/
+	color: #828282;;/*cor negro en Hex*/
+}
+
+/* Navbar */
+#navbar {
+	overflow: auto; / *define o que fai se o tamaño e moi grande*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#navbar a {
+	color: #000; /*cor do enlace de cor negro*/
+}
+
+#navbar .logo {
+	float: left; /*posiciona a esquerda do contenedor*/
+	padding-top: 12px;
+}
+
+#navbar img {
+	height: 80px;
+}
+
+#navbar ul {
+	list-style: none; /*lle quitamos os puntos a lista non ordeada*/
+	float: right; /*mandamos o menú a dereita do contenedor*/
+
+}
+
+#navbar ul li {
+	float: left; /*en vez de listarse os list items, (li) en vertical, se teñen que poñer xuntos na mesma liña*/ 
+}
+
+#navbar ul li a { 
+	display: block;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+	font-family: 'Bangers';
+	color: #828282;
+;
+
+
+}
+
+#showcase {
+ 	background-image: url("img/gran segredo.jpeg");
+ 	background: ;background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*Scales the image (while preserving its ratio) to the smallest possible size to fill the container*/
+	height: 550px; /*altura da foto principal*/
+	text-align: center;
+	padding: 100px;
+
+}
+#showcase .btn {
+	margin-top: 180px;   /*distancia dende enriba para poñer o botón de proxectos na foto principal*/
+}
+
+
+
+
+
+/* Footer */
+#mainfooter {
+	background: #f9f9f9;
+	text-align: center;
+	padding: 30px;
+}
+
+
